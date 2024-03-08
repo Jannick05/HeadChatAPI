@@ -1,9 +1,48 @@
 # HeadChatAPI
 
-Hex Code format used in code is `<#RRGGBB>`
+## Description
 
+HeadChatAPI is a utility class written in Java that allows you to retrieve an 8x8 pixel player head image of a Minecraft user. It fetches the player head from the Cravatar.eu service and provides methods to obtain the pixel data as a list of strings.
+
+## Usage
+
+### `getFace(String name)`
+
+This method retrieves the player head image of the Minecraft user with the specified name.
+
+**Parameters:**
+- `name` (String): The username of the Minecraft user whose head image you want to retrieve.
+
+**Returns:**
+- `List<String>`: A list of strings representing the pixel data of the player head image.
+
+### `getFace(File img)`
+
+This method retrieves the player head image from a local file.
+
+**Parameters:**
+- `img` (File): The file object representing the image file.
+
+**Returns:**
+- `List<String>`: A list of strings representing the pixel data of the player head image.
+
+## Example
+
+```java
+import java.io.File;
+import java.util.List;
+
+public class PlayerJoinListener implements Listener {
+    @EventHandler
+    public void onPlayerJoin(PlayerJoinEvent event) {
+        List<String> pixelData = HeadChatAPI.getFace("username");
+        for (String line : pixelData) {
+            event.getPlayer().sendMessage(line);
+        }
+    }
+}
 ```
-HeadChatAPI.getFace(playerName);
-```
+Hex Code format used in code is `<#RRGGBB>`, you can change this inside the class.
+
 
 ![Example](https://cdn.discordapp.com/attachments/688470737110958213/1215799046229463090/image.png?ex=65fe1019&is=65eb9b19&hm=88567144fb499f14cb9652cc4636b6374b7cd5fd57512e3982db4aa90ce01b53&)
