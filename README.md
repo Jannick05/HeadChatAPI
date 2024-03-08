@@ -29,7 +29,10 @@ This method retrieves the player head image from a local file.
 ## Example
 
 ```java
-import java.io.File;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerJoinEvent;
+
 import java.util.List;
 
 public class PlayerJoinListener implements Listener {
