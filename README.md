@@ -48,4 +48,4 @@ public class PlayerJoinListener implements Listener {
 Hex Code format used in code is `<#RRGGBB>`, you can change this inside the class.
 
 
-![Example](https://imgur.com/a/shzFtcD.png)
+![Example](https://imgur.com/oEzVQRT.png)
