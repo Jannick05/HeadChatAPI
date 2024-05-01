@@ -48,4 +48,4 @@ public class PlayerJoinListener implements Listener {
 Hex Code format used in code is `<#RRGGBB>`, you can change this inside the class.
 
 
-![Example](https://cdn.discordapp.com/attachments/688470737110958213/1215799046229463090/image.png?ex=65fe1019&is=65eb9b19&hm=88567144fb499f14cb9652cc4636b6374b7cd5fd57512e3982db4aa90ce01b53&)
+![Example](https://imgur.com/a/shzFtcD.png)
